@@ -7,6 +7,7 @@ class FavoriteSongsContainer extends Component {
     return (
       <div>
         <h2> Songs </h2>
+        <h3>{this.props.artist}</h3>
       </div>
     );
   }
