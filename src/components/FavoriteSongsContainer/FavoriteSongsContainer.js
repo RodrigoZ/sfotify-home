@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
-import FavoriteSongBox from  './FavoriteSongBox';
 
 class FavoriteSongsContainer extends Component {
 
+  handleChange(event) {
+    alert("click!");
+  }
+
   render() {
+// let names = this.props.names
+console.log("El props!"+this.props.names);
     return (
       <div>
-        <h2> Songs </h2>
-        <h3>{this.props.artist}</h3>
+        {/* <ul>
+          {this.props.names.map(function(listValue,i){
+            return <li key={i}>{listValue}</li>;
+          })}
+        </ul> */}
+        <ul>
+          <li onClick={this.handleChange.bind(this)}>{this.props.names} </li>
+        </ul>
       </div>
     );
   }

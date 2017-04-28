@@ -9,7 +9,7 @@ class FavoriteSongBox extends Component {
           <img src={this.props.logo} className="FavoriteSongBox-albumImage" alt={this.props.albumName} />
         </div>
         <div className="FavoriteSongBox-description">
-          <p className="FavoriteSongBox-songName">{this.props.songName}</p>
+          {/* <p className="FavoriteSongBox-songName">{this.props.songName}</p> */}
           <p className="FavoriteSongBox-artistName">{this.props.artistName}</p>
           <p className="FavoriteSongBox-albumName">{this.props.albumName}</p>
         </div>
